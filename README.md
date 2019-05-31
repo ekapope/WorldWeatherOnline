@@ -1,4 +1,4 @@
-# WorldWeatherOnline historical weather data python
+# WorldWeatherOnline historical weather data API wrapper
 
 This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.
 
@@ -31,8 +31,8 @@ Output: location_name.csv
 #### Example code
 ```python
 frequency=3
-start_date = '11-dec-2018'
-end_date = '11-mar-2019'
+start_date = '11-DEC-2018'
+end_date = '11-MAR-2019'
 api_key = 'YOUR_API_KEY'
 location_list = ['singapore','california']
 
