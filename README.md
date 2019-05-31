@@ -52,7 +52,7 @@ hist_weather_data = retrieve_hist_data(api_key,
 
 **api_key**: *string*
 
-(Premium/ free trial) API key from worldweatheronline.com
+(Premium/ free trial) API key from https://www.worldweatheronline.com/developer/api/
 
 
 **location_list**: *list of string*
