@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-
 This script is used to retrieve and transform weather data into single csv.
 example API exploror: https://www.worldweatheronline.com/developer/premium-api-explorer.aspx
 
