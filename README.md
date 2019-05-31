@@ -76,7 +76,7 @@ If True, retrieved dataframe(s) will be stored as list in the work space.
 ```
 
 #### Console view
-![IPython](/doc/screenshots/Example_01.PNG | width=600)
+![IPython](/doc/screenshots/Example_01.PNG)
 
 
 #### Output file
