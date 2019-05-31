@@ -10,16 +10,24 @@ output: location_name.csv'
 @author: Ekapope Viriyakovithya
 """
 
-from setuptools import setup
+import setuptools
 
-setup(name='wwo_hist',
-      version='0.1',
-      description='Retrieve historical weather data and save into single csv',
-      url='https://github.com/ekapope/WorldWeatherOnline/',
-      author='Flying Circus',
-      author_email='ekapope.v@gmail.com',
-      license='MIT',
-      packages=['wwo_hist'],
-      zip_safe=False)
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-
+setuptools.setup(
+    name="wwo_hist",
+    version="0.0.1",
+    author="Ekapope Viriyakovithya",
+    author_email="ekapope.v@gmail.com",
+    description="Retrieve historical weather data and save into single csv",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/ekapope/WorldWeatherOnline",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+)
