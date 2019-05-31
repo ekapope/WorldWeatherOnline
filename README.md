@@ -74,3 +74,8 @@ store_df: bool, default = False
 If True, retrieved dataframe(s) will be stored as list in the work space.
 
 ```
+
+#### Console
+
+
+#### Output file
