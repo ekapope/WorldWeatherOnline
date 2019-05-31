@@ -7,6 +7,13 @@ You can get API key for free (free trial 500 requests/key for 60 days, as of 30-
 example API explorer: https://www.worldweatheronline.com/developer/premium-api-explorer.aspx
 
 
+**Input**: api_key, location_list, start_date, end_date, frequency
+
+**Output**: location_name.csv
+
+**Output column names**: date_time, maxtempC, mintempC, totalSnow_cm, sunHour, uvIndex, uvIndex, moon_illumination, moonrise, moonset, sunrise, sunset, DewPointC, FeelsLikeC, HeatIndexC, WindChillC, WindGustKmph, cloudcover, humidity, precipMM, pressure, tempC, visibility, winddirDegree, windspeedKmph
+
+
 #### Install the package:
 ```
 pip install wwo-hist
@@ -25,11 +32,6 @@ os.chdir(".\YOUR_PATH")
 
 
 #### Example code
-
-Input: api_key, location_list, start_date, end_date, frequency
-
-Output: location_name.csv
-
 ```python
 frequency=3
 start_date = '11-DEC-2018'
