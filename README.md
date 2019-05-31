@@ -12,20 +12,21 @@ example API explorer: https://www.worldweatheronline.com/developer/premium-api-e
 pip install wwo-hist
 ```
 
-#### import package 
+#### Import package
 ```python
 from wwo_hist import retrieve_hist_data
 ```
 
-#### set working directory to store csv file output
+#### Set working directory to store output csv file(s)
 ```python
 import os
 os.chdir(".\YOUR_PATH")
 ```
 
+Input: api_key, location_list, start_date, end_date, frequency
 
-input: api_key, location_list, start_date, end_date, frequency
-output: location_name.csv'
+Output: location_name.csv
+
 
 #### Example code
 ```python
@@ -42,5 +43,34 @@ hist_weather_data = retrieve_hist_data(api_key,
                                 frequency,
                                 location_label = False,
                                 export_csv = True,
-                                store_df = False)
+                                store_df = True)
+```
+
+#### Parameters:
+```
+api_key: string
+(Premium/ free trial) API key from worldweatheronline.com
+
+location_list: list of string
+US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name
+
+start_date: string
+Preferred date format: 'dd-mmm-yyyy'
+
+end_date: string
+Preferred date format: 'dd-mmm-yyyy'
+
+frequency: integer
+1, 3, 6, 12, 24
+1 hourly, 3 hourly, 6 hourly, 12 hourly (day/night) or 24 hourly (day average)
+
+location_label: bool, default = False
+If True, all column names will have city name as prefix.
+
+export_csv: bool, default = True
+If False, no csv file will be exported to current directory.
+
+store_df: bool, default = False
+If True, retrieved dataframe(s) will be stored as list in the work space.
+
 ```
