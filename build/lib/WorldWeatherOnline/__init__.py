@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 This script is used to retrieve and transform weather data into single csv.
-example API explorer: https://www.worldweatheronline.com/developer/premium-api-explorer.aspx
+example API exploror: https://www.worldweatheronline.com/developer/premium-api-explorer.aspx
 
 input: api_key, location_list, start_date, end_date, frequency
 

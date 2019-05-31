@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wwo-hist
+Version: 0.0.1
+Summary: Retrieve historical weather data and save into single csv
+Home-page: https://github.com/ekapope/WorldWeatherOnline
+Author: Ekapope Viriyakovithya
+Author-email: ekapope.v@gmail.com
+License: UNKNOWN
+Description: # WorldWeatherOnline
+        WorldWeatherOnline historical weather function wrap
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
