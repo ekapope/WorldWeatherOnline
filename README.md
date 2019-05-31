@@ -2,7 +2,7 @@
 
 This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.
 
-You can get API key for free (free trial 500 requests/key for 60 days, as of 30-May-2019).
+You can get API key for free (free trial 500 requests/key/day for 60 days, as of 30-May-2019).
 
 example API explorer: https://www.worldweatheronline.com/developer/premium-api-explorer.aspx
 
