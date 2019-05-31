@@ -17,7 +17,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wwo_hist",
-    version="0.0.1",
+    version="0.0.2",
     author="Ekapope Viriyakovithya",
     author_email="ekapope.v@gmail.com",
     description="Retrieve historical weather data and save into single csv",
