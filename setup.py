@@ -17,10 +17,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wwo_hist",
-    version="0.0.2",
+    version="0.0.3",
     author="Ekapope Viriyakovithya",
     author_email="ekapope.v@gmail.com",
-    description="Retrieve historical weather data and save into single csv",
+    description="This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ekapope/WorldWeatherOnline",

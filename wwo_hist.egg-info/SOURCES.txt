@@ -1,6 +1,6 @@
 README.md
 setup.py
-WorldWeatherOnline/__init__.py
+wwo_hist/__init__.py
 wwo_hist.egg-info/PKG-INFO
 wwo_hist.egg-info/SOURCES.txt
 wwo_hist.egg-info/dependency_links.txt
