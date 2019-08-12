@@ -1,5 +1,7 @@
 # WorldWeatherOnline historical weather data API wrapper
 
+[![Downloads](https://pepy.tech/badge/wwo-hist)](https://pepy.tech/project/wwo-hist)
+
 This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.
 
 You can get API key for free (free trial 500 requests/key/day for 60 days, as of 30-May-2019).
