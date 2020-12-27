@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: wwo-hist
-Version: 0.0.5
+Version: 0.0.7
 Summary: This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.
 Home-page: https://github.com/ekapope/WorldWeatherOnline
 Author: Ekapope Viriyakovithya

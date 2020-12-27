@@ -17,7 +17,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wwo_hist",
-    version="0.0.5",
+    version="0.0.7",
     author="Ekapope Viriyakovithya",
     author_email="ekapope.v@gmail.com",
     description="This package is used to retrieve and transform historical weather data from www.worldweatheronline.com into pandas dataframe and csv.",
