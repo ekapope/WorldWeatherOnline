@@ -10,7 +10,7 @@ output: location_name.csv'
 @author: Ekapope Viriyakovithya
 """
 
-import urllib
+import urllib.request
 import urllib.parse
 import json
 import pandas as pd
