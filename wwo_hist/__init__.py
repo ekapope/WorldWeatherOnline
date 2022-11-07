@@ -66,12 +66,12 @@ def retrieve_this_location(api_key, location, start_date, end_date, frequency, r
     start_time = datetime.now()
 
     # create list of first day of month for range between start and end dates non-inclusive (open)
-    list_mon_begin = pd.date_range(start_date, end_date, freq='MS', closed='right')
+    list_mon_begin = pd.date_range(start_date, end_date, freq='MS', inclusive='right')
     # convert to Series and add start_date at beginning
     list_mon_begin = pd.concat([pd.Series(pd.to_datetime(start_date)), pd.Series(list_mon_begin)], ignore_index=True)
 
     # create list of month end dates for range between start and end dates non-inclusive (open)
-    list_mon_end = pd.date_range(start_date, end_date, freq='M', closed='left')
+    list_mon_end = pd.date_range(start_date, end_date, freq='M', inclusive='left')
     # convert to Series and add end_date at end
     list_mon_end = pd.concat([pd.Series(list_mon_end), pd.Series(pd.to_datetime(end_date))], ignore_index=True)
 
