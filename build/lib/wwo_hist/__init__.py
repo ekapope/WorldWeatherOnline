@@ -15,6 +15,7 @@ import urllib.parse
 import json
 import pandas as pd
 from datetime import datetime
+from tqdm import tqdm
 import os
 
 
@@ -80,16 +81,14 @@ def retrieve_this_location(api_key, location, start_date, end_date, frequency, r
 
     # initialize df_hist to store return data
     df_hist = pd.DataFrame()
-    for m in range(total_months):
+    for m in tqdm(range(total_months), desc='Currently retrieving data for: ' + str(location) + '. From ' + str(start_date) + ' to ' + str(end_date)):
         start_d = str(list_mon_begin[m])[:10]
         end_d = str(list_mon_end[m])[:10]
         file_path = f'{response_cache_path}/{location}_{start_d}_{end_d}'
         if response_cache_path and os.path.exists(file_path):
-            print('Reading cached data for ' + location + ': from ' + start_d + ' to ' + end_d)
             with open(f'{response_cache_path}/{location}_{start_d}_{end_d}', 'r') as f:
                 json_data = json.load(f)
         else:
-            print('Currently retrieving data for ' + location + ': from ' + start_d + ' to ' + end_d)
             url_page = 'http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=' + api_key + '&q=' + location + '&format=json&date=' + start_d + '&enddate=' + end_d + '&tp=' + str(
                 frequency)
             json_page = urllib.request.urlopen(url_page, timeout=10)
@@ -105,7 +104,6 @@ def retrieve_this_location(api_key, location, start_date, end_date, frequency, r
         df_hist = pd.concat([df_hist, df_this_month])
 
         time_elapsed = datetime.now() - start_time
-        print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))
     return (df_hist)
 
 
